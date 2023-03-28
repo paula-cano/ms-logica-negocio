@@ -5,11 +5,12 @@ import {VentaProducto} from './venta-producto.model';
 
 @model({
   settings:{
-    foreignKeys:{
+    foreignKeys:
+    {
       fk_venta_idCliente:{
         name: "fk_venta_idCliente",
         entity: "Cliente",
-        EntityKey: "id",
+        entityKey: "id",
         foreignKey: "clienteId"
       }
     }
